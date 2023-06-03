@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Mrs+Saint+Delafield&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <input type="checkbox" id="btn-menu">
+    <label for="btn-menu"><img src="assets/menu.png" alt="Menu" height="30px" width="30px"></label>
+        <div class="container">
+            <p class="logo">Restaurant</p>
+                <nav class="menu">
+                <ul>
+                <li><a href="#somos">CONOCENOS</a></li>
+                <li><a href="#nuestros">GALERÍA</a></li>
+                <li><a href="#menu">MENÚ</a></li>
+                <li><a href="#caracteristicas">CONTACTO</a></li>
+                <li><a href="#caracteristicas">LOGIN</a></li>
+                <li><a href="#caracteristicas">REGISTRO</a></li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+
+<main>
+
+    <section id="hero">
+        <h1>Bienvenido <br> a tu lugar </h1>
+        <p> Te estábamos esperando para que disfrutes de esta experiencia...</p>
+    </section>
+    
+    <section id="somos"><!--About Us-->
+<div class="container">
+        <div class="img container">
+           <!-- <img src="assets/hero.jpg">-->
+        </div> <!--Img About-->
+        <h2>Somos Restaurant</h2>
+        <p>Restaurant es una marca registrada ampliamente conocida por nuestra variedad de sabores, colores y experiencias a lo largo de nuestra carrera. Nos caracterizamos por la excelencia en el servicio, organización e innovación de propuestas. <br>
+            Nuestro sueño comenzó en el año 2021 con mucha dedicación y esfuerzo. Hoy, somos referentes en el rubro gastronómico. </p>
+    </div>
+    </section>
+
+    <section id="nuestros">
+        <div class="container">
+        <h2> Galería</h2>
+        <div class="programas">
+        <div class="carta">
+            <h3>Desayunos</h3> 
+            <p>Tenemos la mejor variedad para que comiences tu día de la mejor manera, con productos frescos y producción diaria.</p>
+        </div>
+        <div class="carta">
+            <h3>Almuerzo</h3>
+            <p>Todas las opciones familiares, empresariales, para disfrutar con amigos o en el break del trabajo.</p>
+        </div>
+        <div class="carta">
+            <h3>Postres</h3>
+            <p>Deleitá las especialidades de la pastelería regional e internacional junto con nuestros reposteros especializados. </p>
+        </div>
+    </div>
+</div>
+    </section>
+    
+<section id="menu-rest">
+<div class="container">
+       <h2>Menú</h2>
+    <h3>Desayunos</h3>
+    <ul>
+        <li> Infusiones varias</li>
+        <li> Exprimidos</li>
+        <li> Chocolatadas</li>
+        <li> Café</li>
+        <li> Omellets</li>
+        <li> Hotcakes</li>
+        <li> Pancakes</li>
+        <li> Opciones vegetarianas</li>
+        <li> Tortas y tartas</li>
+        <li> Elaboraciones del día</li>
+        </ul>
+    <h3>Entradas</h3>
+    <ul>
+        <li>Empanadas</li>
+        <li>Papas fritas</li>
+        <li>Sopas</li>
+        <li>Pizzas</li>
+        <li> Sandwichs</li>
+        <li> Porciones de asado</li>
+        </ul>
+        <h3>Platos Principales</h3>
+        <ul>
+            <li>Hamburguesas</li>
+            <li>Parrilladas</li>
+            <li>Achuras</li>
+            <li>Cerdo</li>
+            <li> Vegetales Asados</li>
+            <li> Almuerzos empresariales</li>
+            </ul>
+            <h3>Postres</h3>
+        <ul>
+            <li> Helados</li>
+            <li>Cupcakes</li>
+            <li>Donas</li>
+            <li>Waffles</li>
+            <li> Pastelería argentina</li>
+            <li> Pastelería francesa</li>
+            <li> Pastelería italiana</li>
+            </ul>
+            <p>Las opciones podrán ser modificadas sin previo aviso, tomando por prioridad en el día la carta que se encuentra impresa en el Restaurant. Por reservas y consultas comunicarse previamente.</p>
+</div>
+</section>
+
+    <section id="caracteristicas">
+        <div class="container">
+           <div class="contacto">
+            <h2>Contacto</h2>
+            <br/>
+            <form>
+            <label for="nombre"></label>
+            <input type="text" input size="20" id="nombre" placeholder="Nombre y apellido"/>
+            <!--           
+            <label for="apellido"></label>
+            <input type="text" id="apellido" placeholder="Apellido"/>-->
+            <br/>
+            <br/>
+
+        <label for="correo"></label>
+        <input type="e-mail" input size="20" id="correo" placeholder="Ingrese su email"/>
+        <br/>
+        <br/>
+
+        <label for="numero"></label>
+        <input type="number" id="numero" placeholder="Ingrese su número"/>
+        <br/>
+        <br/>
+
+        <textarea name="notas"  cols="40" rows="10" input size="55" placeholder="Mensaje"></textarea>
+        <br/>
+        <br/>
+
+        <button type="submit">ENVIAR</button>
+        </form>
+        </div>
+    
+        <div class="ubicacion">
+        <h2>Ubicación</h2>
+        <p>Calle 59 S/N</p>
+        <p>(1900) La Plata, Buenos Aires </p>
+        <p>WhatsApp: 15-9999-0000</p>
+        <p>Horario: Martes a domingo 11 a 22:30 hs.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1156.5538682771391!2d-57.950300116116544!3d-34.92581006868372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1685064368486!5m2!1ses!2sar" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </div>
+    </section>
+   </main>
+
+    <footer>
+        <div class="container">
+            <img src="assets/facebook.png" alt="Facebook" height="20px" width="20px">
+            <img src="assets/instagram.png" alt="Instagram" height="20px" width="20px">
+            <p>&copy; Restaurant2023</p>
+            <p>Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

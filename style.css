@@ -1,0 +1,367 @@
+*{
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: whitesmoke;
+    margin:0;
+}
+
+h1{
+    font-size: 4.5em;
+    font-family: 'Allura', cursive;
+    color: rgb(250, 163, 7);
+}
+
+h2 {
+     font-size: 2.4em;
+     color: rgb(250, 163, 7);
+     display: inline;
+    }
+
+h3{ 
+    font-size: 2em;
+}
+
+p{
+    font-size: 1.25em;
+    font-family: 'Quicksand', sans-serif;
+}
+
+ul{ 
+    list-style: none;
+}
+
+li{ 
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+}
+  
+ button{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 40 px;
+    border-radius: 10px;
+    font-family: 'Quicksand', sans-serif;
+    border: 2px solid rgb(0,0,0,8);
+    color: whitesmoke;
+    background-color: black;
+}
+
+button:hover{
+    background-color: rgb(250, 163, 7);
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    justify-content: center;/*Prueba*/
+}
+
+header{
+    background-color: whitesmoke;
+    box-shadow: 0 5px 5px rgb(182, 181, 181);
+}
+
+.header .logo {
+    margin: 0;
+    padding: 25px 30px;
+}
+
+header .container {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /*padding-bottom: 25px;*/
+}
+
+header a {
+    padding: 10px 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+}
+
+header a:hover {
+    color:rgb(250, 163, 7);
+}
+
+/*Hamburguesa*/
+
+header{
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+#btn-menu{
+    display: none;
+}
+
+header label{
+    display: none;
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+ }
+
+header label:hover{
+    cursor: pointer;
+    background: rgba(0, 0, 0, 1);  
+}
+
+.menu ul{
+    margin:0;
+  /*  display: none;*/
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    }
+
+.menu li:hover{
+          opacity: 0.5;
+}
+.menu li a{
+    display: block;
+    padding: 15px 10px;
+    color:black;
+    text-decoration: none;
+}
+
+/*Tablet*/
+@media (max-width:768px){
+
+header label{
+    display: block;
+}
+
+/*Desplegable*/
+.menu {
+        position: absolute;
+        /*background: whitesmoke;*/
+        background: rgb(212, 147, 26);
+        opacity: 0.8;
+        width: 50%;
+        margin-left:-50%;
+        transition: all 0.7s;
+}
+
+.menu ul {
+        flex-direction: column;
+        text-align: center;
+}
+
+.menu li {
+border: transparent;
+text-align: center;
+}
+
+#btn-menu:checked ~ .menu {
+    margin:0;
+    }        
+}
+
+#hero {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vb;
+    color: whitesmoke;
+    background-image: url(assets/hero.jpg);
+    
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+ text-shadow: 3px 3px 3px black;
+}
+
+#hero p{
+    font-size: 2rem;
+    color: rgb(250, 163, 7);
+    font-family: 'Allura', cursive;
+    }
+
+#somos {
+    padding: 80px 50px;
+
+}
+
+#somos .container{
+    text-align: center;
+    padding: 10px 10px;
+    justify-content: center;/*Prueba*/
+    }
+
+#nuestros {
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    text-shadow: 3px 3px 3px black;
+}    
+
+ #nuestros .container{
+    padding: 30px 10px;
+    /*justify-content: center;*/
+    }  
+
+ #nuestros p {
+    display: center;
+ }
+
+ #nuestros h2 {
+    margin-top: 0;
+    font-size: 3em;
+    text-shadow: 3px 3px 3px black;
+ }
+ 
+ #nuestros .carta{
+    background-position: center center;
+    background-size:cover;
+    
+    padding: 50px 0px;
+    margin: 20px;
+    border-radius: 15px;
+ }
+
+.carta:first-child{
+background-image: url(assets/desayuno.jpg);
+}
+
+.carta:nth-child(2){
+background-image: url(assets/almuerzo.jpg);
+}
+
+.carta:nth-child(3){
+    background-image: url(assets/postres.jpg);
+}
+
+#menu-rest {
+    display: flex;
+    padding: 50px 50px;
+    margin: 30px 3px;
+    font-weight: bold;
+}
+
+
+#menu-rest h3{
+    margin-top: 20px;
+    font-size: 2em;
+    font-family: 'Quicksand', sans-serif;
+    text-shadow: 3px 3px 3px black;
+}
+
+#menu-rest li{
+    margin: 10px 0px;
+    font-weight: bold;
+}
+
+#menu-rest ul{
+    column-count: 3;
+    column-gap: 10px;
+    /*column-fill: auto;*/
+}
+
+#caracteristicas .container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    }
+
+#caracteristicas .contacto {
+    text-align: left;
+    }
+
+#caracteristicas .ubicacion {
+    text-align: left;
+    }
+
+footer{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: center;
+    
+}
+
+footer p{
+    margin: 0;
+    color: rgb(100, 100, 100);
+    padding: 10px;
+}
+
+footer img{
+    display:flex;
+}
+
+
+footer .container {
+    height: 30vb;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/*Compu*/
+@media (min-width:720px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+ header .container{
+    flex-direction: row;
+}
+
+header nav{
+    flex-direction: row;
+    padding-bottom: 10;
+    padding-right: 25px;
+}
+
+#somos .container{
+   /* display: flex;*/
+   justify-content: center;
+   width: 80%;
+   max-width: 80%;
+}
+
+#nuestros .container{
+display: column;
+justify-content: center;
+}  
+
+#nuestros p{
+    display: block;
+}
+
+#nuestros h3{
+    margin-top: 0;
+}
+
+#nuestros .carta{
+    padding: 60px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 20px rgb(100, 100, 100);
+}
+
+#menu{
+    text-align: initial;
+}
+}
