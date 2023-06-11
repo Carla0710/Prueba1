@@ -216,7 +216,7 @@ text-align: center;
 
 /*Section Somos*/
 #somos {
-    padding: 60px 50px;
+    padding: 60px 40px;
 }
 
 #somos .container{
@@ -233,7 +233,7 @@ text-align: center;
     justify-content: center;
     align-items: center;
     margin: auto;
-  /*  flex-wrap:wrap;*/
+  flex-wrap:wrap;
 }
 
 #nuestros {
@@ -255,7 +255,7 @@ text-align: center;
 
 #nuestros .img{
     margin: 10px;
-    max-width: 350px;
+    max-width: 300px;
     height: 200px;
     overflow: hidden;
     background-size:cover;
@@ -293,13 +293,14 @@ padding: auto;
     text-align: center;
     font-weight: bold;
     line-height: 1.4;
+    padding: auto;
     }
 
 /*Menu*/
 #menu-rest {
     display: flex;
-    padding: 20px 50px;
-    margin: 30px 3px;
+    padding: 25px 25px;
+    margin: 30px 0;
     font-weight: bold;
 }
 
@@ -335,15 +336,15 @@ padding: auto;
 
 /*Contact*/
 #contact{
-   position: relative;
+   /*position: relative;*/
    bottom: 0;
    width: 100%;
    height: 100%;
-   padding: 50px 100px;
+   padding: 10px 10px;
    display: flex;
-justify-content: center;
+   justify-content: center;
     align-items: center;
-  /* flex-direction: column;*/
+   /* flex-direction: column;*/
    }
 
 .content{
@@ -360,12 +361,12 @@ text-align: center;
 }
 
 .container-info{
-    width: 100%;
+    width: 40%;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
-    margin-top: 40px;
-}
+    overflow: hidden;
+    }
 
 .contactform,
 .container-info{
@@ -374,8 +375,8 @@ text-align: center;
 
 .contactform{
     width: 40%;
-    padding: 30px;
-    padding-top: 30px;
+    padding: 15px;
+    padding-top: 40px;
     background-color:rgb(241, 196, 113);
     border-radius: 15px;
     }
@@ -390,8 +391,7 @@ text-align: center;
 .contactform .inputbox{
     position: relative;
     width: 100%;
-    margin-top: 10px;
-}
+    }
 
 .inputbox input,
 .inputbox textarea{
@@ -444,33 +444,35 @@ text-align: center;
 /*Parte2*/
 
 .contactInfo{
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    max-height: 500px;
+    max-height: 600px;
     }
 
 .box{
     position: relative;
-    padding: 10px 10px;
+    padding: 5px 10px;
     display: flex;
     width: 300px;
     height: 100%;
-    align-items: center;
-   }
+    }
 
 .box .icon {
     margin-bottom: 40px;
   }
-
+  .box .p {
+    font-size: 1em;
+  }
+    
 .container .img{
     min-width: 25px;
     height: 25px;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     }
 
 .container .text{
@@ -480,7 +482,7 @@ text-align: center;
     color: black;
     flex-direction: column;
     font-weight: 100;
-    margin-top: 10px;
+    margin-bottom: 10px;
     }
 
 .box h3{
@@ -489,7 +491,7 @@ text-align: center;
     font-weight: 300;
     margin-bottom: 5px;
 }   
-
+/*
 .contact-map{
     width: 100%;
     height: auto;
@@ -501,7 +503,7 @@ text-align: center;
     height: 100%;
     padding: 30px;
 }
-
+*/
 /*Footer*/
 .footer {
     position: absolute;
@@ -617,10 +619,10 @@ justify-content: center;
     flex-direction: column; 
 }
 .container-info .contactInfo{
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 .container .contactInfo,
 .contactform{
-    width: 100%;
+    width: 90%;
 }
 }
