@@ -6,23 +6,25 @@
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
     <title>Restaurant</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Allura&family=Mrs+Saint+Delafield&family=Quicksand:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-    <input type="checkbox" id="btn-menu">
-    <label for="btn-menu"><img src="assets/menu.png" alt="Menu" height="30px" width="30px"></label>
+    
+    <label for="btn-menu"><img src="assets/menu.png" alt="Menu" height="30px" width="30px">
+    </label>
+    <input type="checkbox" id="btn-menu" checked="true">
         <div class="container">
-            <p class="logo">Restaurant</p>
+            <div class="logo">
+        <a href="#"> <div class="icon">Nené Restaurant</a></div></div>
                 <nav class="menu">
                 <ul>
                 <li><a href="#somos">CONOCENOS</a></li>
                 <li><a href="#nuestros">GALERÍA</a></li>
-                <li><a href="#menu">MENÚ</a></li>
-                <li><a href="#caracteristicas">CONTACTO</a></li>
-                <li><a href="#caracteristicas">LOGIN</a></li>
-                <li><a href="#caracteristicas">REGISTRO</a></li>
+                <li><a href="#menu-rest">MENÚ</a></li>
+                <li><a href="#contact">CONTACTO</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="registro.html">REGISTRO</a></li>
             </ul>
             </nav>
         </div>
@@ -35,36 +37,46 @@
         <p> Te estábamos esperando para que disfrutes de esta experiencia...</p>
     </section>
     
-    <section id="somos"><!--About Us-->
+    <section id="somos">
 <div class="container">
         <div class="img container">
-           <!-- <img src="assets/hero.jpg">-->
-        </div> <!--Img About-->
-        <h2>Somos Restaurant</h2>
-        <p>Restaurant es una marca registrada ampliamente conocida por nuestra variedad de sabores, colores y experiencias a lo largo de nuestra carrera. Nos caracterizamos por la excelencia en el servicio, organización e innovación de propuestas. <br>
+          
+        </div>
+        <h2>Somos Nené Restaurant</h2>
+        <p>Creamos desde cero una marca registrada ampliamente conocida por nuestra variedad de sabores, colores y experiencias a lo largo de nuestra carrera. Nos caracterizamos por la excelencia en el servicio, organización e innovación de propuestas. <br>
             Nuestro sueño comenzó en el año 2021 con mucha dedicación y esfuerzo. Hoy, somos referentes en el rubro gastronómico. </p>
     </div>
     </section>
 
     <section id="nuestros">
         <div class="container">
-        <h2> Galería</h2>
-        <div class="programas">
-        <div class="carta">
+            <h2> Galería</h2>
+        <div class="container__flex">
+            <div class="carta">
+            <img src="assets/desayuno1.jpg" alt="Desayuno">
+            <div class="contenido">
             <h3>Desayunos</h3> 
             <p>Tenemos la mejor variedad para que comiences tu día de la mejor manera, con productos frescos y producción diaria.</p>
         </div>
-        <div class="carta">
-            <h3>Almuerzo</h3>
-            <p>Todas las opciones familiares, empresariales, para disfrutar con amigos o en el break del trabajo.</p>
         </div>
         <div class="carta">
+           <img src="assets/almuerzo.jpg" alt="Almuerzo"> 
+           <div class="contenido">
+           <h3>Almuerzo</h3>
+           <p>Todas las opciones familiares, empresariales, para disfrutar con amigos o en el break del trabajo.</p>
+        </div>
+        </div>
+        <div class="carta">
+            <img src="assets/postres.jpg" alt="Postres"> 
+            <div class="contenido">
             <h3>Postres</h3>
-            <p>Deleitá las especialidades de la pastelería regional e internacional junto con nuestros reposteros especializados. </p>
+            <p>Deleitá las especialidades de la pastelería regional e internacional. </p>
         </div>
     </div>
+       </div>
 </div>
-    </section>
+
+</section>
     
 <section id="menu-rest">
 <div class="container">
@@ -114,56 +126,79 @@
 </div>
 </section>
 
-    <section id="caracteristicas">
-        <div class="container">
-           <div class="contacto">
-            <h2>Contacto</h2>
-            <br/>
-            <form>
-            <label for="nombre"></label>
-            <input type="text" input size="20" id="nombre" placeholder="Nombre y apellido"/>
-            <!--           
-            <label for="apellido"></label>
-            <input type="text" id="apellido" placeholder="Apellido"/>-->
-            <br/>
-            <br/>
+<section id="contact">
+    <div class="content">
+      </div>
+     <div class="contactform">
+                  <!--Parte1--> 
+         <form>
+          <h2>¿Dudas? ¿Consultas?</h2>
+          <div class="inputbox">
+              <input type="text" name="nombre">
+              <span>Nombre y apellido</span>
+          </div>
 
-        <label for="correo"></label>
-        <input type="e-mail" input size="20" id="correo" placeholder="Ingrese su email"/>
-        <br/>
-        <br/>
+          <div class="inputbox">
+              <input type="text" name="e-mail">
+              <span>E-mail</span>
+          </div>
 
-        <label for="numero"></label>
-        <input type="number" id="numero" placeholder="Ingrese su número"/>
-        <br/>
-        <br/>
+          <div class="inputbox">
+              <textarea> </textarea>
+              <span>Escribe tu mensaje</span>
+          </div>
 
-        <textarea name="notas"  cols="40" rows="10" input size="55" placeholder="Mensaje"></textarea>
-        <br/>
-        <br/>
+          <div class="inputbox">
+              <input type="submit" name="" value="Enviar">
+              </div>
+         </form> 
+      </div>
+      
+         <div class="container-info">
+        <div class="contactInfo"><!--Parte2-->
+             <div class="box">
+                 <div class="icon"><img src="assets/mapa.png" alt="Mapa" height="30px" width="30px"></div>
+                 <div class="text">
+                     <h3>Dirección</h3>
+                     <p>Calle 59 S/N <br>(1900) La Plata, Buenos Aires.</br></p>
+                 </div>
+             </div>
 
-        <button type="submit">ENVIAR</button>
-        </form>
+             <div class="box">
+                 <div class="icon"><img src="assets/whatsapp.png" alt="WhatsApp" height="30px" width="30px"></div>
+                 <div class="text">
+                     <h3>WhatsApp</h3>
+                     <p>15-9999-0000</p>
+                 </div>
+             </div>
+
+             <div class="box">
+                 <div class="icon"><img src="assets/abierto.png" alt="horario" height="30px" width="30px"></div>
+                 <div class="text">
+                     <h3>Horario</h3>
+                     <p>Martes a domingo 11 a 22:30 hs.</p>
+                 </div>
+             </div>
+            <!-- <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1156.5538682771391!2d-57.950300116116544!3d-34.92581006868372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1685064368486!5m2!1ses!2sar" width="200px" height="200px" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" border: none></iframe>
+               </div> -->
+         </div>
         </div>
-    
-        <div class="ubicacion">
-        <h2>Ubicación</h2>
-        <p>Calle 59 S/N</p>
-        <p>(1900) La Plata, Buenos Aires </p>
-        <p>WhatsApp: 15-9999-0000</p>
-        <p>Horario: Martes a domingo 11 a 22:30 hs.</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1156.5538682771391!2d-57.950300116116544!3d-34.92581006868372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1685064368486!5m2!1ses!2sar" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        </div>
-    </section>
+    </div>
+     </section>
+
    </main>
 
     <footer>
-        <div class="container">
-            <img src="assets/facebook.png" alt="Facebook" height="20px" width="20px">
-            <img src="assets/instagram.png" alt="Instagram" height="20px" width="20px">
-            <p>&copy; Restaurant2023</p>
-            <p>Todos los derechos reservados.</p>
+        <div class="footer-content">
+         <ul class="socials">
+        <li><a href="#"><img src="assets/facebook.png" alt="Facebook" height="25px" width="25px"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><img src="assets/instagram.png" alt="Instagram" height="25px" width="25px"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><img src="assets/twitter.png" height="25px" width="25px"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+        </div>
+        <div class="footer-bottom">
+        <p>&copy; Nené Restaurant2023 Todos los derechos reservados. Diseñado por <span>Carla Scott.</span></p>
         </div>
     </footer>
 </body>
