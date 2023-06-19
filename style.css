@@ -175,6 +175,7 @@ header .logo img {
         margin-left:-50%;
         transition: all 0.7s;
         transition: height .3s linear;
+        z-index: 10;
 }
 
 .menu ul {
@@ -191,8 +192,12 @@ text-align: center;
    margin:0;
    display: none;
    text-align: center;
-   
-}  
+ }  
+
+ #btn-menu:checked ~ main #hero h1 {
+    opacity: 0;
+  }
+ 
 .contact{
     display: flex;
     flex-direction: column;
@@ -227,6 +232,10 @@ text-align: center;
     background-position: center center;
     opacity: 0.6;
      z-index: -1;
+      }
+
+      #hero h1{
+        display: block;
       }
       
       #hero h1,
@@ -591,6 +600,11 @@ header nav{
     padding-bottom: 10;
     padding-right: 25px;
 }
+
+#btn-menu:checked ~ main #hero h1 {
+    display: none;
+}
+
 /*Somos*/
 
 #somos .container{
